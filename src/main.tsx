@@ -5,10 +5,15 @@ import './index.css'
 import ReactDOM from "react-dom/client";
 
 import CartProvider from "./contexts/CartContext";
+import { Toaster } from "react-hot-toast";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <CartProvider>
+      /<Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
       <RouterProvider router={router} />
     </CartProvider>
   </React.StrictMode>
