@@ -10,7 +10,7 @@ import { Toaster } from "react-hot-toast";
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <CartProvider>
-      /<Toaster
+      <Toaster
         position="top-center"
         reverseOrder={false}
       />
